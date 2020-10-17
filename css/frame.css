@@ -1,0 +1,251 @@
+/* font */
+@font-face{
+    /* 取用字型需要空格 */
+    font-family: 'Bebas Neue';
+    src: url(../font/english/Bebas_Neue/BebasNeue-Regular.woff) format('woff');
+
+    /* 英文推薦 */
+    font-family: 'BreeSerif';
+    src: url(../font/english/Bree_Serif/BreeSerif-Regular.ttf) format('truetype');
+    /* 英文粗體，中文粗體推薦 */
+    font-family: 'play_bold';
+    src: url(../font/english/play/Play-Bold.ttf) format('truetype');
+
+    /* 日本字型(包括繁體) */
+    font-family: 'GenEiLateMin';
+    src: url(../font/japan/GenEiLatin-Separate_v2.1/GenEiLateGoP_v2.woff) format('woff');
+
+    /* 英文中文粗體 */
+    font-family: 'Roboto Bold';
+    src: url(../font/english/Roboto/Roboto-Bold.ttf) format('truetype');
+
+    /* logo英文用字體 */
+    font-family: 'TitilliumWeb_Bold';
+    src: url(../font/english/TitilliumWeb/TitilliumWeb-Bold.ttf) format('truetype');
+
+    /* 中文粗體 */
+    font-family: 'UDDigiKyokashoN_B';
+    src: url(../font/chinese/UDDigiKyokashoN-B.ttc) format('truetype');
+    /* 中文細 */
+    font-family: 'UDDigiKyokashoN_R';
+    src: url(../font/chinese/UDDigiKyokashoN-R.ttc) format('truetype');
+}
+/* font */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* header */
+header.header{
+    /* border: 1px solid red; */
+    background-color: #003366;
+    width: 100%;
+    height: 115px;
+    margin: auto;
+    display: flex;
+
+}
+div.header_div{
+    /* border: 1px solid blue; */
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+div.header_div_1{
+    text-align: center;
+}
+a.header_div_1_a{
+    display: inline-block;
+    text-decoration: none;
+}
+img.logo{
+    width: 100px;
+}
+div.logo_name{
+    text-decoration: none;
+    color: white;
+    font-family: TitilliumWeb_Bold;
+    font-weight: bolder;
+}
+
+div.header_div_2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 900px;
+}
+div.header_div_menu{
+    transition: 0.3s ease-in-out;
+}
+div.header_div_menu:not(:last-child){
+    margin-right: 2%;
+}
+div.header_div_menu:hover div.header_div_text{
+    transform: translateY(-5px);
+}
+div.header_div_menu:hover i.fas{
+    color: #FFD700;
+} 
+div.header_div_2 a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-family: UDDigiKyokashoN_R;
+    white-space: nowrap;
+    color: white;
+}
+div.header_div_text{
+    font-family: UDDigiKyokashoN_R;
+    transition: 0.3s ease-in-out;
+}
+
+i.fa-search-dollar, i.fa-file-alt, i.fa-user{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20%;
+    transition: 0.3s ease-in-out;
+}
+/* header */
+
+/* footer */
+footer.footer{
+    background-color: #003366;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_div div.social_media{
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+i.fa-facebook, i.fa-twitter, i.fa-line{
+    font-size: 2.5rem;
+    color: white;
+}
+i.fa-facebook, i.fa-twitter{
+    margin-right: 7%;
+}
+.footer_div div.footer_text{
+    color: white;
+    margin-bottom: 3%;
+    font-size: 12px;
+    font-family: TitilliumWeb_Bold;
+}
+/* footer */
+
+/* 以下是返回頁頂 */
+.toTop-arrow {
+	width: 57.95px;
+	height: 96.85px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	position:fixed;
+	right: 40px;
+	bottom: 10px;
+    display: none;
+    /* background-image: url(../img/logo/Logo_6.png); */
+}
+/* .toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	background: rgb(255, 60, 0);
+	position: absolute;
+	content: "";
+} */
+/* .toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 17px;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 17px;
+} */
+.toTop-arrow:focus {
+    outline: none;
+}
+
+img.toTop-arrow{
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+img.toTop-arrow:hover{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+/* 以上是返回頁頂 */
+
+/* RWD */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    header.header, div.header_div, footer.footer{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    header.header, div.header_div, footer.footer{
+        width: 100%;
+    }
+    .toTop-arrow{
+        right: 10px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    header.header, div.header_div, footer.footer{
+        width: 100%;
+    }
+    .toTop-arrow{
+        right: 10px;
+    }
+}
+@media screen and (max-width: 575px){
+    header.header, div.header_div, footer.footer{
+        width: 100%;
+    }
+    .toTop-arrow{
+        right: 10px;
+    }
+}
+/* RWD */

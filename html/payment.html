@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/payment.css">
+        <title>Fund Raising / 好東西就是貴</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_div">
+                <div class="header_div_1">
+                    <a href="../index.html" class="header_div_1_a">
+                        <img src="../img/logo/Logo_5.png" alt="" class="logo">
+                        <div class="logo_name">Fund Raising</div>
+                    </a>
+                </div>
+
+                <div class="header_div_2">
+                    <div class="header_div_menu">
+                        <a href="class_page.html">
+                            <i class="fas fa-search-dollar"></i>
+                            <div>尋找計畫</div>
+                        </a>
+                    </div>
+                    <div class="header_div_menu">
+                        <a href="create_project.html">
+                            <i class="fas fa-file-alt"></i>
+                            <div>申請提案</div>
+                        </a>
+                    </div>
+                    <div class="header_div_menu">
+                        <a href="login.html">
+                            <i class="fas fa-user"></i>
+                            <div>會員專區</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="title_div">
+                <div class="title_div_1">
+                    <img src="../img/good/product_info_img_1.jpg" alt="" class="title_div_img">
+                </div>
+                <div class="title_div_2">
+                    <div class="title_div_2_title titleDiv2">魚出沒，請小心魚的頭《Oh!我的魚頭¿》今年最ㄎㄧㄤ的遊戲！</div>
+                    <div class="title_div_2_text titleDiv2"><a href="">遊戲</a> | 由 <a href="">瘋狂島Maddish Island</a> 提案</div>
+                    <div class="title_div_2_progress titleDiv2">集資進度：50%</div>
+                    <div class="title_div_2_target titleDiv2">目前金額：50,000 &nbsp;/&nbsp;目標金額：100,000</div>
+                </div>
+            </div>
+            <hr>
+            <section class="section_payment">
+                
+                <div class="div">
+                    <div class="product_project_select">
+                        <div class="product_project_img">
+                            <img src="../img/good/product_info_select_img/sponsor_1.jpg" alt="" class="product_project_1_img">
+                        </div>
+                        <div class="product_info">
+                            <div class="price">售價：NT$119</div>
+                            <div class="product_content lineHeight">
+                                <ul class="product_content_ul">
+                                    <li>《Oh!我的魚頭¿》&times;1盒</li>
+                                    <li>如有贊助此項目並贊助其他組合，神秘禮物將會與贊助品一起出貨。</li>
+                                    <li>如贊助此項目人數共50人，會從中抽出1位升級為「神秘大禮物」，將於粉絲團公開得獎者。</li>
+                                </ul>
+                            </div>
+                            <div class="delivery">
+                                <div class="delivery_1 lineHeight">
+                                    <p>寄送地點</p>
+                                    <p>只寄送台灣本島</p>
+                                </div>
+                                <div class="delivery_1 lineHeight">
+                                    <p>預計寄送時間</p>
+                                    <p>2020/08</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" value="選擇其他專案?" onclick="history.back()" class="back">
+                </div>
+
+
+                <div class="payment_form">
+                    <form action="" method="post" class="form_payment">
+                        <div class="pay_method">
+                            <p class="center">付款方式</p>
+                            <label for="credit_card" class="credit_card br">
+                                <input type="radio" name="payment" id="credit_card" value="credit_card"><i class="far fa-credit-card"></i>信用卡付款
+                            </label>
+                            <label for="atm" class="atm br">
+                                <input type="radio" name="payment" id="atm" value="atm"><i class="fas fa-university"></i>ATM轉帳或銀行臨櫃繳款
+                            </label>
+                        </div>
+                        <div class="pay_amount">
+                            <p class="pay_text_1 center">贊助金額</p>
+                            <input type="number" name="" id="" value="119" min="119" class="bo br fs">
+                            <p class="pay_text_2">最低金額為贊助選項價格。 可向上加碼幫助計畫加速成功。你的贊助將幫助計畫進度前進 0.6%！</p>
+                        </div>
+                        <div class="country same">
+                            <p class="center">國家</p>
+                            <select name="country" id="" class="bo br fs">
+                                <option value="taiwan_locat">台灣(本島) Taiwan - 運費 + 0</option>
+                                <option value="">台灣(離島) Taiwan's surrounding islands - 運費 + 100</option>
+                            </select>
+                        </div>
+                        <div class="address">
+                            <div class="same">
+                                <p class="center">地址</p>
+                                <input type="text" name="" id="" class="locate bo br fs lc">
+                            </div>
+                            <div class="same">
+                                <p class="center mn">郵遞區號</p>
+                                <input type="text" name="" id="" class="locate_number bo br fs ln">
+                            </div>
+                        </div>
+                        <div class="recipient same">
+                            <p class="center">收件人</p>
+                            <input type="text" name="" id="" class="bo br fs">
+                        </div>
+                        <div class="phone same">
+                            <p class="center">連絡電話</p>
+                            <input type="text" name="" id="" class="bo br fs">
+                        </div>
+                        <div class="remarks same">
+                            <p class="center">備註</p>
+                            <input type="text" name="" id="" class="bo br fs">
+                        </div>
+                        <input type="submit" value="立即贊助" class="bo br fs ff">
+                    </form>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer_div">
+                <div class="social_media">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-line"></i></a>
+                </div>
+                <div class="footer_text">&copy;Fund Raising 2020 All Right Reserved.</div>
+            </div>
+        </footer>
+
+
+        <img src="../img/logo/Logo_6.png" alt="" id="BackTop" class="toTop-arrow">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c70a4a193f.js" crossorigin="anonymous"></script>
+        <script src="../js/backToTop.js"></script>
+    </body>
+</html>

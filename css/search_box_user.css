@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+@font-face{
+  /* 取用字型需要空格 */
+  font-family: 'Bebas Neue';
+  src: url(../font/english/Bebas_Neue/BebasNeue-Regular.woff) format('woff');
+
+  /* 英文推薦 */
+  font-family: 'BreeSerif';
+  src: url(../font/english/Bree_Serif/BreeSerif-Regular.ttf) format('truetype');
+  /* 英文粗體，中文粗體推薦 */
+  font-family: 'play_bold';
+  src: url(../font/english/play/Play-Bold.ttf) format('truetype');
+
+  /* 日本字型(包括繁體) */
+  font-family: 'GenEiLateMin';
+  src: url(../font/japan/GenEiLatin-Separate_v2.1/GenEiLateGoP_v2.woff) format('woff');
+
+  /* 英文中文粗體 */
+  font-family: 'Roboto Bold';
+  src: url(../font/english/Roboto/Roboto-Bold.ttf) format('truetype');
+
+  /* 中文粗體 */
+  font-family: 'UDDigiKyokashoN_B';
+  src: url(../font/chinese/UDDigiKyokashoN-B.ttc) format('truetype');
+  /* 中文細 */
+  font-family: 'UDDigiKyokashoN_R';
+  src: url(../font/chinese/UDDigiKyokashoN-R.ttc) format('truetype');
+}
+#wrap {
+  /* margin: 50px 100px; */
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  display: flex;
+  /* float: right; */
+  padding: 0;
+  /* position: relative; */
+}
+input.text {
+  height: 30px;
+  font-size: 23px;
+  /* display: inline-block; */
+  font-family: UDDigiKyokashoN_R;
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input.text:focus:hover {
+  border-bottom: 1px solid #003366;
+}
+
+input.text:focus {
+  width: 200px;
+  z-index: 1;
+  border-bottom: 1px solid #003366;
+  cursor: text;
+}
+input.submit {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  color:red;
+  /* float: right; */
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+  background-size: 50%;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+input.submit:hover {
+  opacity: 0.8;
+}
+
+/* RWD */
+@media screen and (min-width: 576px) and (max-width: 767px){
+  input.text:focus {
+    width: 150px;
+    z-index: 1;
+    border-bottom: 1px solid #003366;
+    cursor: text;
+  }
+}
+@media screen and (max-width: 575px){
+  input.text:focus {
+    width: 150px;
+    z-index: 1;
+    border-bottom: 1px solid #003366;
+    cursor: text;
+  }
+}
+/* RWD */

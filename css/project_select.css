@@ -1,0 +1,197 @@
+/* frame */
+@import "./frame.css";
+/* frame */
+
+/* main */
+main.main{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: 880px;
+    margin: auto;
+}
+/* 上面標題 */
+div.title_div{
+    display: flex;
+    justify-content: space-around;
+}
+div.title_div_1{
+    width: 400px;
+}
+img.title_div_img{
+    width: 100%;
+}
+div.titleDiv2{
+    font-family: UDDigiKyokashoN_R;
+    margin-bottom: 2%;
+}
+div.title_div_2_title{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 2%;
+}
+div.title_div_2_text{
+    font-family: UDDigiKyokashoN_R;
+    margin-bottom: 12%;
+}
+div.title_div_2_text a{
+    text-decoration: none;
+}
+div.title_div_2_progress{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bolder;
+    background-color: #22BC46;
+}
+/* 上面標題 */
+h1{
+    font-family: UDDigiKyokashoN_R;
+    font-size: 25px;
+    font-weight: bolder;
+}
+section.section{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+/* 以下專案區塊 */
+a.product_project_select_a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5%;
+}
+div.product_project_select{
+    width: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto;
+    background-color: #00336627;
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    transition: 0.3s ease-in-out;
+}
+div.product_project_select:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+div.product_project_img{
+    margin: auto;
+    width: 280px;
+}
+img.product_project_1_img{
+    width: 100%;
+}
+div.product_info{
+    width: 270px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 250px 60px;
+    margin: auto;
+    font-family: UDDigiKyokashoN_R;
+}
+div.price{
+    font-size: 23px;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+div.product_content{
+    margin-bottom: 10%;
+}
+div.delivery{
+    display: flex;
+    justify-content: space-between;
+}
+div.lineHeight{
+    line-height: 1.3;
+}
+ul.product_content_ul{
+    width: 230px;
+    margin: auto;
+    list-style-type: square;
+}
+/* 以上專案區塊 */
+/* main */
+
+/* RWD */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    main.main, section.section{
+        width: auto;
+    }
+    main.main{
+        height: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    main.main, section.section{
+        width: auto;
+    }
+    section.section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        overflow: unset;
+    }
+    main.main{
+        height: auto;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    main.main, section.section{
+        width: auto;
+    }
+    div.title_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px;
+    }
+    div.title_div_1{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    section.section{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        overflow: unset;
+    }
+    main.main{
+        height: auto;
+    }
+}
+@media screen and (max-width: 575px){
+    main.main, section.section{
+        width: auto;
+    }
+    div.title_div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px;
+    }
+    div.title_div_1{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    section.section{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        overflow: unset;
+    }
+    main.main{
+        height: auto;
+    }
+}
+/* RWD */

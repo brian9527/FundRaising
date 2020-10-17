@@ -1,0 +1,2620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/class_page.css">
+        <link rel="stylesheet" href="../css/search_box.css">
+        <title>Fund Raising / 好東西就是貴</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header_div">
+                <div class="header_div_1">
+                    <a href="../index.html" class="header_div_1_a">
+                        <img src="../img/logo/Logo_5.png" alt="" class="logo">
+                        <div class="logo_name">Fund Raising</div>
+                    </a>
+                </div>
+
+                <div class="header_div_2">
+                    <div class="header_div_menu">
+                        <a href="class_page.html">
+                            <i class="fas fa-search-dollar"></i>
+                            <div class="header_div_text">尋找計畫</div>
+                        </a>
+                    </div>
+                    <div class="header_div_menu">
+                        <a href="create_project.html">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="header_div_text">申請提案</div>
+                        </a>
+                    </div>
+                    <div class="header_div_menu">
+                        <a href="login.html">
+                            <i class="fas fa-user"></i>
+                            <div class="header_div_text">會員專區</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- 搜尋列 -->
+            <div class="search_bar">
+                <div class="class_select_more">
+                    <!-- 潛力集資，熱門集資，即將推出，專案金額，最後衝刺，最新啟動 -->
+                    <div class="search_project">
+                        <span class="select_1" tabindex="0" onclick="return true"><span id="the_text">尋找專案</span><i class="fas fa-sort-down select_1"></i></span>
+                        <div class="div_div_1" tabindex="0" onclick="return true"></div>
+                        <div class="option_div" id="option_id">
+                            <a href="javascript:void(0)" index="0" class="tab_btn curr_btn"><option value="潛力集資" class="select_option">潛力集資</option></a>
+                            <a href="javascript:void(0)" index="1" class="tab_btn"><option value="熱門集資" class="select_option">熱門集資</option></a>
+                            <a href="javascript:void(0)" index="2" class="tab_btn"><option value="即將推出" class="select_option">即將推出</option></a>
+                            <a href="javascript:void(0)" index="3" class="tab_btn"><option value="專案金額" class="select_option">專案金額</option></a>
+                            <a href="javascript:void(0)" index="4" class="tab_btn"><option value="最後衝刺" class="select_option">最後衝刺</option></a>
+                            <a href="javascript:void(0)" index="5" class="tab_btn"><option value="最新啓動" class="select_option">最新啓動</option></a>
+                        </div>
+                    </div>
+                    <span class="span_text">/</span>
+                    <div class="search_project_2">
+                        <span class="select_2" tabindex="0" onclick="return true"><span id="the_text_2">分類</span><i class="fas fa-sort-down select_1"></i></span>
+                        <div class="div_div_2" tabindex="0" onclick="return true"></div>
+                        <div class="option_div_2" id="option_id_2">
+                            <a href="javascript:void(0)" index="5" class="tab_btn curr_btn"><option value="科技" class="select_option_2">科技</option></a>
+                            <a href="javascript:void(0)" index="4" class="tab_btn"><option value="文藝" class="select_option_2">文藝</option></a>
+                            <a href="javascript:void(0)" index="3" class="tab_btn"><option value="生活" class="select_option_2">生活</option></a>
+                            <a href="javascript:void(0)" index="2" class="tab_btn"><option value="旅遊" class="select_option_2">旅遊</option></a>
+                            <a href="javascript:void(0)" index="1" class="tab_btn"><option value="遊戲" class="select_option_2">遊戲</option></a>
+                            <a href="javascript:void(0)" index="0" class="tab_btn"><option value="計畫" class="select_option_2">計畫</option></a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <!-- search box -->
+                <div id="wrap" class="search_box">
+                    <form action="" autocomplete="on">
+                        <input id="search" name="search" type="text" placeholder="">
+                        <input id="search_submit" value="Rechercher" type="submit">
+                    </form>
+                </div>
+                <!-- search box -->
+            </div>
+            <!-- 搜尋列 -->
+
+            <!-- 商品陳列 -->
+            <div id="tab">
+
+                <div class="product_display tab_div curr_div">
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_display tab_div">
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_display tab_div">
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_display tab_div">
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_display tab_div">
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FFD700;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">26天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">75%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_1st">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">i-Ctrl Pro｜生活遊我控</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;不想動手也不想動口？那就讓全新搭載AI感控的i-Ctrl Pro離開各種遙控，主宰自己的生活！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">17天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">110%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_2nd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Catnnon- 猫，好宅 !</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;以各式木作工法製成趣味砲台造型，並嚴格選材料，打造無毒、天然、安全的寵物遊憩品。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="hot_project_div_mother">
+                        <div class="hot_project_div_child_1" style="background-color: #FF2400;">
+                            <div class="hot_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="hot_project_div_day">13天</div>
+                            </div>
+                            <div class="hot_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">170%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_hot_3rd">
+                            <a href="product_page.html" class="hot_project_div_child_2_a"><div class="hot_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="hot_project_div_child_3">
+                            <div class="hot_project_div_child_3_title">Meow樂北投-守護浪猫</div>
+                            <!-- <div class="hot_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;流浪猫的議題，一直是愛猫人士心中的痛。如果也願意守護這些毛孩，和我們一起實現3方共好，讓愛心效益最大化。
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_display tab_div">
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #B7B7B7;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">123天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">6%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_1st">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_1st"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Haylou Solar智慧手表</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;✔30天超長續航 ✔圓形金屬機身 ✔磁吸充電♡千元穿戴王者時尚【Haylou Solar智慧手表】實現對智慧手表的所有期待！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #0F81C8;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">87天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_2nd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_2nd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">Deepunch 震動按摩槍</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;我們投入一年研發，從雙握把輕量化專利、高轉速馬達機構到工業風質感設計，量身打造出最適合亞洲人的震動按摩槍！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">46天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_3rd">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_3rd"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">1MORE 降噪無線藍牙耳機</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;ANC 主動降噪 x 環境音模式 x 圈鐵雙單體設計。最超値的旗艦藍牙耳機霸主！
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="new_project_div_mother">
+                        <div class="new_project_div_child_1" style="background-color: #22BC46;">
+                            <div class="new_project_div_time">
+                                <i class="fas fa-clock"></i>還剩
+                                <div class="new_project_div_day">32天</div>
+                            </div>
+                            <div class="new_project_div_progress">
+                                <div>集資進度</div>
+                                <div class="percent">50%</div>
+                            </div>
+                        </div>
+                        <div class="background_color_4th">
+                            <a href="product_page.html" class="new_project_div_child_2_a"><div class="new_project_div_child_2_4th"></div></a>
+                        </div>
+                        <div class="new_project_div_child_3">
+                            <div class="new_project_div_child_3_title">《Oh!我的魚頭》遊戲</div>
+                            <!-- <div class="new_project_div_child_3_text">
+                                &nbsp;&nbsp;&nbsp;&nbsp;單純釣魚不稀奇，拿魚攻撃別人才有趣，想方法釣起最長的魚魚，用網子捕撈稀有寶物，獲得榮耀獎杯！
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+            <!-- 商品陳列 -->
+            <div class="pagination_block">
+                <ul class="pagination">
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#" class="-on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <!-- <img src="./img/logo/Logo_5.png" alt="" class="logo"> -->
+            <div class="footer_div">
+                <div class="social_media">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-line"></i></a>
+                </div>
+                <div class="footer_text">&copy;Fund Raising 2020 All Right Reserved.</div>
+            </div>
+        </footer>
+        
+
+        <img src="../img/logo/Logo_6.png" alt="" id="BackTop" class="toTop-arrow">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c70a4a193f.js" crossorigin="anonymous"></script>
+        <script src="../js/class_page.js"></script>
+        <script src="../js/class_page_2.js"></script>
+        <script src="../js/class_page_3.js"></script>
+        <script src="../js/backToTop.js"></script>
+    </body>
+</html>

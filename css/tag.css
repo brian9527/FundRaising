@@ -1,0 +1,572 @@
+#tab{
+    width: 1000px;
+    margin: auto;
+}
+/* 頁籤 */
+#tab div.div_bottom{
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px 0 20px;
+}
+#tab div.div_bottom div{
+    list-style-type: none;
+}
+#tab div.div_bottom div a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bolder;
+    color: #003366;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+#tab div.div_bottom div a:hover{
+    background-color: #00336627;
+}
+#tab div.div_text {
+    clear:both;
+    padding:0 15px;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    transition:all 0.5s ease-in-out;
+    border-radius: 15px;
+}
+/* span:target ~ #tab div.div_bottom div:first-child a {
+    background:#ffffff;
+} */
+span:target ~ #tab div.div_text:first-of-type {
+    visibility:hidden;
+    height:0;
+    padding:0 15px;
+}
+/* span ~ #tab div.div_bottom div:first-child a, */
+#tab-1:target ~ #tab > div.div_bottom div a[href$="#tab-1"],
+#tab-2:target ~ #tab > div.div_bottom div a[href$="#tab-2"],
+#tab-3:target ~ #tab > div.div_bottom div a[href$="#tab-3"],
+#tab-4:target ~ #tab > div.div_bottom div a[href$="#tab-4"],
+#tab-5:target ~ #tab > div.div_bottom div a[href$="#tab-5"]{
+    background-color: #00336627;
+    color: #003366;
+}
+
+span ~ #tab div.div_text:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4,
+#tab-5:target ~ #tab > div.tab-content-5{
+    visibility:visible;
+    height:550px;
+    background: #00336627;
+}
+span{
+    display: none;
+}
+/* 以下表單 */
+form.form{
+    margin-top: 30px;
+}
+div.form_div{
+    display: flex;
+    justify-content: space-around;
+}
+/* 頁籤1 */
+/* div.info{
+    font-family: UDDigiKyokashoN_R;
+} */
+div.memder_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+div.member_photo{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+img.member_photo_img{
+    height: 100%;
+}
+div.member_info_text{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+div.member_info_text_div{
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 30px 30px 30px;
+}
+div.member_info_text_div p:nth-of-type(1){
+    font-size: 30px;
+    font-weight: bolder;
+}
+/* 頁籤1 */
+.more_big{
+    font-size: 30px;
+    font-weight: bolder;
+}
+/* 頁籤2 */
+div.sponsor_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+div.sponsor_title h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* 頁籤2 */
+
+/* 頁籤3 */
+div.proposal_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+div.proposal_title h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.proposal_text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.proposal_text p a{
+    text-decoration: none;
+    color: #003366;
+}
+div.proposal_text p a:hover{
+    font-weight: bold;
+}
+/* 頁籤3 */
+
+/* 頁籤4 */
+div.mas_div{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+div.mas_select{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: 50px 30px;
+}
+div.mas_select h2{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+select.sel_wi{
+    width: 400px;
+}
+div.mas_box{
+    height: 500px;
+    background-color: #003366;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 150px);
+    
+}
+div.mb1{
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 140px;
+    align-self: center;
+    justify-self: center;
+    background-color: #9eb3c9;
+    border-radius: 15px;
+}
+img.mas_logo{
+    width: 80%;
+}
+div.mbi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.mbt{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 100px;
+    align-self: center;
+    justify-self: center;
+}
+div.mbt h3, div.mbt p{
+    width: 98%;
+    display: flex;
+    align-self: center;
+}
+/* 頁籤4 */
+
+/* 頁籤5 */
+div.member_info_change{
+    width: 450px;
+    /* margin: auto; */
+}
+div.member_photo_change{
+    display: flex;
+    margin-bottom: 20px;
+}
+div.member_photo_change_div{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img.member_photo_change_img{
+    height: 100%;
+}
+a.member_photo_text_a{
+    display: grid;
+    text-decoration: none;
+    line-height: 2.5;
+    color: #003366;
+}
+a.member_photo_text_a:hover{
+    color: #FF2400;
+    font-weight: bolder;
+}
+div.member_email_change, div.member_account{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+div.member_email_change input, div.member_account input{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+}
+div.member_info_about{
+    width: 450px;
+    /* margin: auto; */
+}
+div.member_info_about_textarea textarea{
+    resize: none;
+    width: 450px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+}
+div.member_info_name, div.member_info_web{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+div.member_info_name input, div.member_info_web input{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+}
+.small_title{
+    margin-bottom: 5px;
+}
+/* 頁籤5 */
+div.submit_button{
+    text-align: center;
+}
+div.submit_button input{
+    width: 200px;
+    height: 35px;
+    font-family: UDDigiKyokashoN_R;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #003366;
+    border: 1px solid #003366;
+    border-radius: 10px;
+}
+div.submit_button input:hover{
+    color: white;
+    text-shadow: 
+    0 0 5px #FFD700,
+    0 0 10px #FFD700,
+    0 0 20px #FFD700,
+    0 0 40px #FFD700
+    ;
+    background-color: #003366;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* 以上表單 */
+
+/* RWD */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #tab, div.div_bottom, div.div_text{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #tab, div.div_bottom, div.div_text, form.form{
+        width: 100%;
+    }
+    div.mas_div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+    }
+    div.mas_select{
+        width: 370px;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 50px 30px;
+        justify-content: center;
+    }
+    div.mas_select h2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    select.sel_wi{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    div.mas_box{
+        width: 370px;
+    }
+    div.mb1{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 70px 280px;
+        grid-template-rows: 140px;
+        align-self: center;
+        justify-self: center;
+    }
+    div.mbt{
+        font-size: 20px;
+    }
+    div.member_info_change{
+        width: 370px;
+        display: grid;
+        grid-template-columns: 360px;
+    }
+    div.member_photo_change{
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    div.member_email_change, div.member_account{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    div.member_info_about{
+        width: 370px;
+    }
+    div.member_info_about_textarea{
+        width: 360px;
+        display: grid;
+        grid-template-columns: 360px;
+    }
+    div.member_info_about_textarea textarea{
+        width: 360px;
+    }
+}
+@media screen and (min-width: 642px) and (max-width: 767px){
+    #tab, div.div_bottom, div.div_text, div.memder_info, div.member_photo{
+        width: 100%;
+    }
+    div.memder_info{
+        display: grid;
+        grid-template-columns: 280px 260px;
+        grid-template-rows: 1fr;
+        justify-self: center;
+    }
+    div.member_photo{
+        width: 100%;
+    }
+    img.member_photo_img{
+        width: auto;
+        justify-items: center;
+    }
+    div.mas_div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+    }
+    div.mas_select{
+        width: 250px;
+        display: grid;
+        grid-template-columns: 125px 125px;
+        grid-template-rows: 50px 30px;
+        justify-self: center;
+    }
+    div.mas_select h2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    select.sel_wi{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    div.mas_box{
+        width: 250px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    div.mb1{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 60px 180px;
+        grid-template-rows: 230px;
+        align-self: center;
+        justify-self: center;
+    }
+    div.mbt{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30px 170px;
+    }
+    div.member_info_change{
+        width: 280px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    div.member_photo_change{
+        display: grid;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    a.member_photo_text_a{
+        display: grid;
+        line-height: 1.6;
+    }
+    div.member_email_change, div.member_account{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    div.member_info_about{
+        width: 280px;
+    }
+    div.member_info_about_textarea{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    div.member_info_about_textarea textarea{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 641px){
+    #tab, div.div_bottom, div.div_text{
+        width: 100%;
+    }
+    div.memder_info{
+        display: grid;
+        grid-template-columns: 250px 230px;
+        grid-template-rows: 1fr;
+        justify-self: center;
+    }
+    div.member_photo{
+        width: 240px;
+    }
+    img.member_photo_img{
+        width: auto;
+    }
+    div.member_info_text{
+        margin-left: 0px;
+    }
+    div.mas_div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr;
+        justify-items: center;
+    }
+    div.mas_select{
+        width: 250px;
+        display: grid;
+        grid-template-columns: 125px 125px;
+        grid-template-rows: 50px 30px;
+        justify-content: center;
+    }
+    div.mas_select h2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    select.sel_wi{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    div.mas_box{
+        width: 250px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    div.mb1{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 60px 180px;
+        grid-template-rows: 230px;
+        align-self: center;
+        justify-self: center;
+    }
+    div.mbt{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30px 170px;
+    }
+    div.member_info_change{
+        width: 280px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    div.member_photo_change{
+        display: grid;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    a.member_photo_text_a{
+        display: grid;
+        line-height: 1.6;
+    }
+    div.member_email_change, div.member_account{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    div.member_info_about{
+        width: 280px;
+    }
+    div.member_info_about_textarea{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    div.member_info_about_textarea textarea{
+        width: 100%;
+    }
+}
+/* RWD */

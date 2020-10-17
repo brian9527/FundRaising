@@ -1,0 +1,446 @@
+/* frame */
+@import "./frame.css";
+/* frame */
+/* main */
+main.main{
+    /* border: 1px solid green; */
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+div.search_bar{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+/* 以下選單 */
+div.class_select_more{
+    display: flex;
+}
+div.search_project, div.search_project_2{
+    position: relative;
+}
+span.select_1, option.select_option, span.select_2, option.select_option_2{
+    cursor: pointer;
+}
+div.div_div_1, div.div_div_2{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+div.option_div{
+    z-index: 999;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    opacity: 0;
+}
+div.option_div_2{
+    z-index: 998;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    opacity: 0;
+}
+div.option_div option, div.option_div_2 option{
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #003366;
+    transition: 0.3s;
+}
+div.option_div option:hover, div.option_div_2 option:hover{
+    background-color: #003366;
+    border-radius: 10px;
+    color: white;
+    
+}
+span.select_1:focus ~ div.option_div, span.select_2:focus ~ div.option_div_2{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+span.span_text{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* 以上選單 */
+div.class_select_more{
+    font-size: 1.5rem;
+    font-family: UDDigiKyokashoN_R;
+    font-weight: bolder;
+    align-items: center;
+}
+div.class_select{
+    display: flex;
+    justify-content: center;
+}
+div.class_select_more{
+    display: flex;
+    justify-content: start;
+}
+
+.tab_div{
+    display: none;
+}
+.tab_btn{
+    text-decoration: none;
+}
+.curr_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 以下商品陳列 */
+div.product_display{
+    /* border: 1px solid black; */
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}   
+div.new_project_div_mother{
+    /* border: 1px solid purple; */
+    width: 280px;
+    height: auto;
+    transition: 0.5S;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin-bottom: 3%;
+}
+div.new_project_div_mother:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
+    transform: translateY(-10px);
+}
+div.new_project_div_child_1{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-family: UDDigiKyokashoN_R;
+    font-weight: bolder;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+div.new_project_div_time{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+div.new_project_div_day{
+    font-size: 25px;
+    margin-left: 3%;
+}
+div.new_project_div_progress{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+div.percent{
+    font-size: 25px;
+    margin-left: 3%;
+}
+div.new_project_div_child_2_1st{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/new_project_img_1.png);
+    background-size: 100%;
+    background-position: 10% 0%;
+    border-bottom-left-radius: 80px;
+}
+div.new_project_div_child_2_2nd{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/new_project_img_2.png);
+    background-size: 100%;
+    background-position: 10% 0%;
+    border-bottom-left-radius: 80px;
+}
+div.new_project_div_child_2_3rd{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/new_project_img_3.png);
+    background-size: 100%;
+    background-position: 10% 0%;
+    border-bottom-left-radius: 80px;
+}
+div.new_project_div_child_2_4th{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/new_project_img_4.jpg);
+    background-size: 100%;
+    background-position: 10% 100%;
+    border-bottom-left-radius: 80px;
+}
+a.new_project_div_child_2_a{
+    display: block;
+}
+div.new_project_div_child_3{
+    width: 250px;
+    height: auto;
+    margin: auto;
+}
+div.new_project_div_child_3_title{
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: UDDigiKyokashoN_R;
+    font-size: 22px;
+}
+/* div.new_project_div_child_3_text{
+    font-family: UDDigiKyokashoN_R;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+} */
+
+
+div.hot_project_div_mother{
+    /* border: 1px solid green; */
+    width: 280px;
+    height: auto;
+    border-radius: 15px;
+    transition: 0.3s;
+    background-color: #f0f0f0;
+    margin-bottom: 3%;
+}
+div.hot_project_div_mother:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
+    transform: translateY(-10px);
+}
+div.hot_project_div_child_1{
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-family: UDDigiKyokashoN_R;
+    font-weight: bolder;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+div.hot_project_div_time{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+div.hot_project_div_day{
+    font-size: 26px;
+    margin-left: 3%;
+}
+div.hot_project_div_progress{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+div.background_color_hot_1st{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+div.hot_project_div_child_2_1st{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/hot_project_img_1.jpg);
+    background-size: 100%;
+    border-bottom-left-radius: 80px;
+}
+div.background_color_hot_2nd{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div.hot_project_div_child_2_2nd{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/hot_project_img_2.jpg);
+    background-size: 110%;
+    border-bottom-left-radius: 80px;
+}
+div.background_color_hot_3rd{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div.hot_project_div_child_2_3rd{
+    width: 280px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+    background-image: url(../img/good/hot_project_img_3.jpg);
+    background-size: 110%;
+    border-bottom-left-radius: 80px;
+}
+a.hot_project_div_child_2_a{
+    display: block;
+}
+div.hot_project_div_child_3{
+    width: 250px;
+    height: auto;
+    margin: auto;
+}
+div.hot_project_div_child_3_title{
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: UDDigiKyokashoN_R;
+    font-size: 22px;
+}
+div.hot_project_div_child_3_text{
+    font-family: UDDigiKyokashoN_R;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+/* 以上商品陳列 */
+div.pagination_block{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+ul.pagination{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+ul.pagination li{
+    display: inline-block;
+}
+ul.pagination li a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    border-right: 0;           
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #007bff;
+    transition: 0.3s;
+}
+ul.pagination li:last-child a{
+    border-right: 1px solid #dee2e6;
+    border-radius: 0 5px 5px 0;
+}
+ul.pagination li:first-child a{
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+}
+ul.pagination li a.-on{
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+ul.pagination li a:hover{
+    background-color: #003366;
+    color: white;
+    text-shadow: 
+    0 0 5px #ffd700,
+    0 0 10px #ffd700,
+    0 0 20px #ffd700,
+    0 0 40px #ffd700;
+}
+/* 分頁 */
+
+/* 分頁 */
+/* main */
+
+/* RWD */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    main.main, div.search_bar, div.product_display{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    main.main, div.search_bar, div.product_display{
+        width: 100%;
+    }
+    div.product_display{
+        justify-content: space-evenly;
+    }
+    div.option_div{
+        display: grid;
+    }
+    span.select_1:focus ~ div.option_div, span.select_2:focus ~ div.option_div_2{
+        display: grid;
+        background-color: #f0f0f0c7;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    main.main, div.search_bar, div.product_display{
+        width: 100%;
+    }
+    div.product_display{
+        justify-content: space-evenly;
+    }
+    div.option_div, div.option_div_2{
+        display: grid;
+    }
+    span.select_1:focus ~ div.option_div, span.select_2:focus ~ div.option_div_2{
+        display: grid;
+        background-color: #f0f0f0c7;
+    }
+}
+@media screen and (max-width: 575px){
+    main.main, div.search_bar, div.product_display{
+        width: 100%;
+    }
+    div.product_display{
+        justify-content: space-evenly;
+    }
+    div.option_div, div.option_div_2{
+        display: grid;
+    }
+    span.select_1:focus ~ div.option_div, span.select_2:focus ~ div.option_div_2{
+        display: grid;
+        background-color: #f0f0f0c7;
+    }
+    div.search_bar{
+        display: grid;
+        justify-content: center;
+    }
+    div.curr_div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* RWD */

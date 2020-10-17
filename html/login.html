@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/login.css">
+        <title>Fund Raising / 好東西就是貴</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_div">
+                <div class="header_div_1">
+                    <a href="../index.html" class="header_div_1_a">
+                        <img src="../img/logo/Logo_5.png" alt="" class="logo">
+                        <div class="logo_name">Fund Raising</div>
+                    </a>
+                </div>
+
+                <div class="header_div_2">
+                    <div class="header_div_menu">
+                        <a href="class_page.html">
+                            <i class="fas fa-search-dollar"></i>
+                            <div>尋找計畫</div>
+                        </a>
+                    </div>
+                    <div class="header_div_menu">
+                        <a href="create_project.html">
+                            <i class="fas fa-file-alt"></i>
+                            <div>申請提案</div>
+                        </a>
+                    </div>
+                    <div class="header_div_menu">
+                        <a href="login.html">
+                            <i class="fas fa-user"></i>
+                            <div>會員專區</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="form">
+      
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#login" class="link">Login</a></li>
+                    <li class="tab"><a href="#signup" class="link">Signup</a></li>
+                </ul>
+                
+                <div class="tab-content">
+          
+                    <div id="login">
+                        <h1>Welcome back</h1>
+                        <form action="/" method="post">
+                            <div class="field-wrap">
+                                <label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                <input type="email"required autocomplete="off"/>
+                            </div>
+                            
+                            <div class="field-wrap">
+                                <label>
+                                    Password<span class="req">*</span>
+                                </label>
+                                <input type="password"required autocomplete="off"/>
+                            </div>
+                            
+                            <p class="forgot"><a href="#" class="link">Forgot password?</a></p>
+                            
+                            <button class="button button-block"/ onclick="location.href='../html/user_page.html'">Log In</button>
+                            <hr class="hr_style">
+                            <div class="other_acount">
+                                <a href="" class="ol go"><i class="fab fa-google"></i>Login with Google</a>
+                                <a href="" class="ol fb"><i class="fab fa-facebook-f"></i>Login with Facebook</a>
+                            </div>
+                        </form>
+                    </div>
+            
+                    <div id="signup">
+                        <h1>Sign Up For Free</h1>
+                        <form action="/" method="post">
+                        
+                            <div class="top-row">
+                                <div class="field-wrap">
+                                    <label>
+                                    First Name<span class="req">*</span>
+                                    </label>
+                                    <input type="text" required autocomplete="off"/>
+                                </div>
+                            
+                                <div class="field-wrap">
+                                    <label>
+                                    Last Name<span class="req">*</span>
+                                    </label>
+                                    <input type="text"required autocomplete="off"/>
+                                </div>
+                            </div>
+                
+                            <div class="field-wrap">
+                                <label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                <input type="email"required autocomplete="off"/>
+                            </div>
+                                
+                            <div class="field-wrap">
+                                <label>
+                                    Set A Password<span class="req">*</span>
+                                </label>
+                                <input type="password"required autocomplete="off"/>
+                            </div>
+                                
+                                <button type="submit" class="button button-block"/>Become Member</button>
+                                <hr class="hr_style">
+                            <div class="other_acount">
+                                <a href="" class="ol go"><i class="fab fa-google"></i>Signup with Google</a>
+                                <a href="" class="ol fb"><i class="fab fa-facebook-f"></i>Signup with Facebook</a>
+                            </div>
+                        </form>
+            
+                    </div>
+                  
+                </div><!-- tab-content -->
+                
+          </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer_div">
+                <div class="social_media">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-line"></i></a>
+                </div>
+                <div class="footer_text">&copy;Fund Raising 2020 All Right Reserved.</div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c70a4a193f.js" crossorigin="anonymous"></script>
+        <script src="../js/login.js"></script>
+    </body>
+</html>
